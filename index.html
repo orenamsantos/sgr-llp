@@ -1,127 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Uma breve descrição do seu site ou página."
-    />
-    <title>Clique aqui!</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural-Ozempic Challenge</title>
     <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #ffffff; /* Fundo branco */
-        color: #333; /* Texto cinza */
-        line-height: 1.6;
-        text-align: center;
-      }
-
-      .flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        flex-direction: column;
-      }
-
-      .button {
-        display: inline-block;
-        background: linear-gradient(
-          45deg,
-          #000000,
-          #003366
-        ); /* Gradiente de fundo */
-        color: #fff; /* Texto branco */
-        padding: 20px 40px;
-        border: none;
-        border-radius: 10px;
-        font-size: 24px;
-        font-weight: bold;
-        cursor: pointer;
-        text-shadow: none; /* Remover o brilho do texto */
-        text-align: center;
-        text-decoration: none; /* Remover sublinhado */
-        box-shadow: none; /* Remover o brilho ao redor do botão */
-        animation: pulse 1s infinite alternate; /* Animação de pulsar */
-      }
-
-      @keyframes pulse {
-        0% {
-          transform: scale(1); /* Tamanho original */
-          box-shadow: 0 0 10px rgba(0, 191, 255, 0.6); /* Brilho suave */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        50% {
-          transform: scale(1.1); /* Expansão do botão */
-          box-shadow: 0 0 20px rgba(0, 191, 255, 1); /* Brilho mais intenso */
-        }
-        100% {
-          transform: scale(1); /* Retorno ao tamanho original */
-          box-shadow: 0 0 10px rgba(0, 191, 255, 0.6); /* Brilho suave */
-        }
-      }
 
-      .rodape {
-        background: #f0f0f0; /* Fundo cinza claro */
-        padding: 20px;
-        color: #333; /* Texto cinza */
-        font-size: 14px;
-      }
-
-      .rodape a {
-        color: #000000; /* Links com cor preta */
-        text-decoration: none;
-        margin: 0 5px;
-      }
-
-      .disclaimer p {
-        font-size: 14px;
-        margin: 10px 0;
-        color: #666; /* Texto do disclaimer em cinza */
-      }
-
-      @media (max-width: 768px) {
         body {
-          font-size: 14px;
+            min-height: 100vh;
+            background-color: #f0f8ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Inter, sans-serif;
+            padding: 20px;
         }
-
-        .button {
-          padding: 15px 30px;
-          font-size: 18px;
+       
+        .quiz-content {
+            max-width: 400px;
+            width: 100%;
+           
         }
-      }
+       
+        .quiz-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+       
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+            color: #000;
+        }
+       
+        .subtitle {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff9999;
+            margin: 10px 0;
+        }
+       
+        .description {
+            color: #666;
+            margin: 10px 0;
+            font-size:14px;
+        }
+       
+        .age-group {
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            text-align: left;
+            border: 1px solid #FCA5A5;
+            background-color:rgba(230, 200, 255, 0.4);
+        }
+       
+        .age-group:hover {
+            background: #f5f5f5;
+        }
+       
+        .age-group img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+       
+        .age-group span {
+            font-size: 18px;
+            color: #333;
+        }
     </style>
-  </head>
-  <body>
-    <div class="flex">
-      <!-- Botão funcional como link -->
-      <a href=" " class="button">Clique Aqui 👈👈</a>
+</head>
+<body>
+    <div class="quiz-content">
+        <div class="quiz-header">
+            <h1 class="title">NATURAL-OZEMPIC</h1>
+            <h2 class="subtitle">CHALLENGE</h2>
+            <p class="description">Take the test below and receive <strong>your treatment</strong>.</p>
+        </div>
+       
+        <button class="age-group">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150&h=150" alt="Age 18-25">
+            <span>18-25</span>
+        </button>
+       
+        <button class="age-group">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150&h=150" alt="Age 26-35">
+            <span>26-35</span>
+        </button>
+       
+        <button class="age-group">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150&h=150" alt="Age 36-46">
+            <span>36-46</span>
+        </button>
+       
+        <button class="age-group">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=150&h=150" alt="Age +46">
+            <span>+46</span>
+        </button>
     </div>
-    <div class="rodape">
-      <div class="disclaimer">
-        <p>
-          Embora os resultados deste serviço tenham sido demonstrados e
-          confirmados pelos nossos clientes, é crucial ressaltar que os
-          resultados podem variar significativamente entre indivíduos,
-          dependendo de fatores pessoais.
-        </p>
-        <p>
-          As informações fornecidas neste site têm o propósito de oferecer
-          conhecimento geral, sem garantir resultados específicos ou um prazo
-          exato para sua obtenção. Qualquer resultado obtido será de total
-          responsabilidade do cliente, e este produto/página não possui qualquer
-          afiliação com a Meta ADS.
-        </p>
-      </div>
-      <a href="politicas.html"
-        ><strong>Política de Privacidade</strong></a
-      >
-      — <a href="termos.html"><strong>Termos de Uso</strong></a> —
-      <a href="avisos.html"><strong>Aviso Legal</strong></a>
-      <p>Atendimento através: contato@fignaroficial.xyz</p>
-      <p>CNPJ: 59.852.733/0001-05 // ©️ 59.852.733 RENAN LOPES SANTOS</p>
-      <p>Todos os direitos reservados</p>
-    </div>
-  </body>
+</body>
 </html>
